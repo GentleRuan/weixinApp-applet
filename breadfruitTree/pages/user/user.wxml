@@ -1,0 +1,48 @@
+<view class="userBox">
+   <view class="title">个人中心</view>
+   <view class="my-item">
+      <view class="head">
+         <image mode="scaleToFill" src="../../imgs/head.png"></image>
+      </view>
+      <view class="info">
+         <view class="name">我是小萌</view>
+         <view class="news">我是小萌我怕谁，哈哈哈！</view>
+      </view>
+   </view>
+   <view class="swiper-tab">
+      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">照片( 1 )</view>
+      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">关注( 3 )</view>
+      <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">粉丝( 8 )</view>
+   </view>
+   <swiper current="{{currentTab}}" duration="1000" circular="true" class="swiper-box" bindchange="bindChange">
+      <swiper-item class="item-box">
+         <image src="../../imgs/pic02.jpg" class="image"/>
+      </swiper-item>
+      <swiper-item class="item-box">
+         <block wx:for="{{item}}" wx:for-item="i">
+            <view class="user-item">
+               <view class="head">
+                  <image mode="scaleToFill" src="{{i.img}}"></image>
+               </view>
+               <view class="info">
+                  <view class="name">{{i.name}}</view>
+                  <view class="news">我是小萌我怕谁，哈哈哈！</view>
+               </view>
+            </view>
+         </block>
+      </swiper-item>
+      <swiper-item class="item-box">
+         <block wx:for="{{fans}}" wx:for-item="i">
+            <view class="user-item">
+               <view class="head">
+                  <image mode="scaleToFill" src="{{i.img}}"></image>
+               </view>
+               <view class="info">
+                  <view class="name">{{i.name}}</view>
+                  <view class="news">我是小萌我怕谁，哈哈哈！</view>
+               </view>
+            </view>
+         </block>
+      </swiper-item>
+    </swiper>
+</view>

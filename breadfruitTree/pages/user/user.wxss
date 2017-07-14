@@ -1,0 +1,71 @@
+.title{
+   width: 750rpx;
+   height: 50px;
+   background: #0dc441;
+   color: #fff;
+   text-align: center;
+   line-height: 50px;
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 2;
+}
+.my-item{
+   width: 750rpx;
+   height: 70px;
+   display: flex;
+   justify-content: space-around;
+   border-bottom: 1px solid #ddd;
+   padding: 20px 10px;
+   margin-top: 50px;
+}
+.user-item{
+   width: 750rpx;
+   height: 70px;
+   display: flex;
+   justify-content: space-around;
+   border-bottom: 1px solid #ddd;
+   padding: 20px 10px;
+}
+image{
+   width: 70px;
+   height: 70px;
+}
+.info{
+   width: 300px;
+   font-size: 14px;
+   padding-left: 10px;
+   padding-top: 10px;
+}
+.name{
+   padding-top: 4px;
+   padding-bottom: 8px;
+   font-size: 18px;
+}
+.news{
+   color: #aaa;
+}
+.swiper-tab{  
+   width: 750rpx;
+   height: 50px;
+   line-height: 50px;
+   color: #999;
+   background: #fff;
+   opacity: 0.7;
+   display: flex;
+   justify-content: space-around;
+}  
+.swiper-tab-list{  
+   width: 33.33%;
+   text-align: center;
+   border-bottom: 1px solid #ccc; 
+}  
+.on{ 
+   color: #0dc441;
+   border-bottom: 3px solid #0dc441;
+   box-sizing: border-box;
+} 
+.swiper-box{
+   width: 750rpx;
+   height: 700px;
+}

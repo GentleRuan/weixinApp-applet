@@ -1,0 +1,23 @@
+<!--pages/find/find.wxml-->
+<view class="find">
+   <view class="title">发现</view>
+   <view class="search">
+      <input class="in" type="text" placeholder-style="color:#ccc" placeholder="请输入昵称" />
+      <button class="btn" hover-class="hover">搜索</button>
+   </view>
+   <view class="section">
+      <block wx:for="{{arr}}" wx:for-item="i">
+         <view class="search-item">
+            <view class="head">
+               <image mode="scaleToFill" src="{{i.img}}"></image>
+            </view>
+            <view class="info">
+               <view class="name">{{i.name}}</view>
+               <view class="news">{{i.news}}</view>
+            </view>
+            <button class="attention" hover-class="hover2">关注</button>
+         </view>
+      </block>
+   </view>
+</view>
+
